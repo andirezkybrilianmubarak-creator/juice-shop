@@ -17,9 +17,6 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install dependencies
-        run: npm install --legacy-peer-deps
-
       - name: Snyk SCA Scan
         uses: snyk/actions/node@master
         env:
